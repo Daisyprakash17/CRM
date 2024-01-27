@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import AuthRouter from './router/AuthRouter';
 import AppRouter from './router/AppRouter';
+import HeaderContent from './apps/Header/HeaderContainer';
+import Navigation from './apps/Navigation/NavigationContainer';
 
 function App() {
   // const { isLoggedIn } = useSelector(selectAuth);
@@ -15,10 +17,16 @@ function App() {
   );
 else {
   return(
-   // <Localization>
+    // <Localization>
    // <AppContextProvider>
     //  <Suspense fallback={<PageLoader />}>
+        // header
+        // navigtation panel
+      <>
+        <HeaderContent/>
+        <Navigation/>
         <AppRouter />
+    </>
    //   </Suspense>
    // </AppContextProvider>
   //</Localization>
