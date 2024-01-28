@@ -3,6 +3,7 @@
 
 import * as actionTypes from "./constants"
 import en_us from '../../locale/translation/en_us';
+import storePersist from "../storePersist";
 
 const LANG_INITIAL_STATE = {
     result: en_us,
@@ -11,8 +12,8 @@ const LANG_INITIAL_STATE = {
     isSuccess: false,
   };
 
-//   const INITIAL_STATE = storePersist.get('translate') ? storePersist.get('translate'): LANG_INITIAL_STATE;
-  const INITIAL_STATE =  LANG_INITIAL_STATE;
+
+  const INITIAL_STATE = storePersist.get('translate') ? storePersist.get('translate'): LANG_INITIAL_STATE;
 
 
 

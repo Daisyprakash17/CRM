@@ -26,7 +26,7 @@ export const translateAction={
             dispatch({
               type: actionTypes.REQUEST_LOADING,
             });
-            const translation = await fetchTranslation();
+            const translation = await fetchTranslation(); 
             let data = await translation[value];
     
             const LANG_STATE = {

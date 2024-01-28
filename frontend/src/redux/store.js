@@ -3,7 +3,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import lang from '../locale/translation/en_us';
 
 import rootReducer from './rootReducer';
-// import storePersist, { localStorageHealthCheck } from './storePersist';
+import storePersist from './storePersist';
 
 // localStorageHealthCheck();
 
@@ -14,8 +14,8 @@ const LANG_INITIAL_STATE = {
   isSuccess: false,
 };
 
-// const lang_state = storePersist.get('translate') ? storePersist.get('translate') : LANG_INITIAL_STATE;
-const lang_state = LANG_INITIAL_STATE;
+const lang_state = storePersist.get('translate') ? storePersist.get('translate') : LANG_INITIAL_STATE;
+// const lang_state = LANG_INITIAL_STATE;
 
 const AUTH_INITIAL_STATE = {
   current: {},

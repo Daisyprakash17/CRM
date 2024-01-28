@@ -5,6 +5,7 @@ import { Button, Drawer, Layout, Menu } from 'antd';
 // import { useAppContext } from '@/context/appContext';
 
 // import useLanguage from '@/locale/useLanguage';
+import useLanguage from '../../locale/useLanguage';
 // import logoIcon from '@/style/images/logo-icon.svg';
 // import logoText from '@/style/images/logo-text.svg';
 import { useNavigate } from 'react-router-dom';
@@ -37,9 +38,9 @@ export default function Navigation() {
   return <Sidebar collapsible={false} />;
 }
 
-const translate=(value)=>{
-  return value;
-}
+// const translate=(value)=>{
+//   return value;
+// }
 
 
 function Sidebar({ collapsible, isMobile = false }) {
@@ -56,7 +57,7 @@ function Sidebar({ collapsible, isMobile = false }) {
   const [showLogoApp, setLogoApp] = useState(isNavMenuClose);
   const [currentPath, setCurrentPath] = useState(location.pathname.slice(1));
 
-  // const translate = useLanguage();
+  const translate = useLanguage();
   const navigate = useNavigate();
 
   const items = [
