@@ -20,7 +20,8 @@ const BASE_URL="bigTech.com";
 
 
 
-// import SelectLanguage from '@/components/SelectLanguage';
+//import SelectLanguage from '@/components/SelectLanguage';
+//import SelectLanguage from '../../components/SelectLanguage';
 
 // import UpgradeButton from './UpgradeButton';
 
