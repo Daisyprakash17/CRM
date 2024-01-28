@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { Avatar, Dropdown, Layout } from 'antd';
 
+import SelectLanguage from '../../components/SelectLanguage';
 // import Notifications from '@/components/Notification';
 
 import { SettingOutlined, LogoutOutlined } from '@ant-design/icons';
@@ -17,11 +18,6 @@ import { useNavigate } from 'react-router-dom';
 const BASE_URL="bigTech.com";
 
 // import useLanguage from '@/locale/useLanguage';
-
-
-
-//import SelectLanguage from '@/components/SelectLanguage';
-//import SelectLanguage from '../../components/SelectLanguage';
 
 // import UpgradeButton from './UpgradeButton';
 
@@ -151,8 +147,7 @@ export default function HeaderContent() {
       {/* <UpgradeButton /> */}
       {/* UPGRADE BUTTON */}
 
-      {/* <SelectLanguage /> */}
-      SELECT LANGUAGE
+      <SelectLanguage />
     </Header>
   );
 }
