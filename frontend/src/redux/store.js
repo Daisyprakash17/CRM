@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 
-import lang from '@/locale/translation/en_us';
+import lang from '../locale/translation/en_us';
 
 import rootReducer from './rootReducer';
 // import storePersist, { localStorageHealthCheck } from './storePersist';

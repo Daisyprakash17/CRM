@@ -5,7 +5,8 @@ async function fetchTranslation() {
 
     // this is just that might be language tranlation need api call but for now importing from files only
     try {
-      let translation = await import('@/locale/translation/translation');
+      //let translation = await import('@/locale/translation/translation');
+      let translation = await import('../../locale/translation/translation')
       return translation.default;
     } catch (error) {
       console.error(
@@ -15,7 +16,7 @@ async function fetchTranslation() {
     }
   }
 
-export const transalateActions={
+export const translateAction={
         resetstate:()=>(dispatch)=>{
             dispatch({
                 type:actionTypes.RESET_STATE

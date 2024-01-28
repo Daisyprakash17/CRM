@@ -2,7 +2,7 @@
 
 
 import * as actionTypes from "./constants"
-import en_us from '@/locale/';
+import en_us from '../../locale/translation/en_us';
 
 const LANG_INITIAL_STATE = {
     result: en_us,
