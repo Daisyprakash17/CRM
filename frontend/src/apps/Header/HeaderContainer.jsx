@@ -148,7 +148,7 @@ export default function HeaderContent() {
       </Dropdown>
 
       {/* <UpgradeButton /> */}
-      UPGRADE BUTTON
+      {/* UPGRADE BUTTON */}
 
       {/* <SelectLanguage /> */}
       SELECT LANGUAGE
