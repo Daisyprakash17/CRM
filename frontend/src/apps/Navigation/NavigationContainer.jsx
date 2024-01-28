@@ -33,7 +33,8 @@ export default function Navigation() {
   // const { isMobile } = useResponsive();
   const isMobile  = false;
 
-  return isMobile ? <MobileSidebar /> : <Sidebar collapsible={false} />;
+  // return isMobile ? <MobileSidebar /> : <Sidebar collapsible={false} />;
+  return <Sidebar collapsible={false} />;
 }
 
 const translate=(value)=>{
@@ -243,38 +244,39 @@ function Sidebar({ collapsible, isMobile = false }) {
   );
 }
 
-function MobileSidebar() {
-  const [visible, setVisible] = useState(false);
-  const showDrawer = () => {
-    setVisible(true);
-  };
-  const onClose = () => {
-    setVisible(false);
-  };
-  return (
-    <>
-      <Button
-        type="text"
-        size="large"
-        onClick={showDrawer}
-        className="mobile-sidebar-btn"
-        style={{ marginLeft: 25 }}
-      >
-        <MenuOutlined style={{ fontSize: 18 }} />
-      </Button>
-      <Drawer
-        width={250}
-        contentWrapperStyle={{
-          boxShadow: 'none',
-        }}
-        style={{ backgroundColor: 'rgba(255, 255, 255, 0)' }}
-        placement="left"
-        closable={false}
-        onClose={onClose}
-        open={visible}
-      >
-        <Sidebar collapsible={false} isMobile={true} />
-      </Drawer>
-    </>
-  );
-}
+// function MobileSidebar() {
+//   const [visible, setVisible] = useState(false);
+//   const showDrawer = () => {
+//     setVisible(true);
+//   };
+//   const onClose = () => {
+//     setVisible(false);
+//   };
+//   return (
+//     <>
+//       <Button
+//         type="text"
+//         size="large"
+//         onClick={showDrawer}
+//         className="mobile-sidebar-btn"
+//         style={{ marginLeft: 25 }}
+//       >
+//         btton
+//         <MenuOutlined style={{ fontSize: 18 }} />
+//       </Button>
+//       <Drawer
+//         width={250}
+//         contentWrapperStyle={{
+//           boxShadow: 'none',
+//         }}
+//         style={{ backgroundColor: 'rgba(255, 255, 255, 0)' }}
+//         placement="left"
+//         closable={false}
+//         onClose={onClose}
+//         open={visible}
+//       >
+//         <Sidebar collapsible={false} isMobile={false} />
+//       </Drawer>
+//     </>
+//   );
+// }
