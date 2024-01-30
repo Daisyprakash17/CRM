@@ -7,7 +7,7 @@ import Navigation from './apps/Navigation/NavigationContainer';
 
 function App() {
   // const { isLoggedIn } = useSelector(selectAuth);
-  const isLoggedIn=true;
+  const isLoggedIn=false;
 
   if (!isLoggedIn)
   return (
