@@ -4,6 +4,7 @@ import { useRoutes } from 'react-router-dom';
 import { Navigate } from 'react-router-dom';
 
 export default function AppRouter() {
+
   let element = useRoutes([
     {
       path: '/login',
@@ -22,15 +23,20 @@ export default function AppRouter() {
       // element: <Logout />,
       element: <div>logout</div>,
     },
+    // {
+    //   path: '/about',
+    //   // element: <About />,
+    //   element: <dib>about</dib>,
+    // },
+    // {
+    //   path: '/',
+    //   // element: <Dashboard />,
+    //   element: <div>Dashboard</div>,
+    // },
     {
-      path: '/about',
-      // element: <About />,
-      element: <dib>about</dib>,
-    },
-    {
-      path: '/',
+      path: '*',
       // element: <Dashboard />,
-      element: <div>Dashboard</div>,
+      element: <div style={{marginLeft:"500px"}}>UNDER DEVELOPMENT</div>,
     }
     // ,
     // {

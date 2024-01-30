@@ -27,7 +27,7 @@ const AUTH_INITIAL_STATE = {
 // const auth_state = storePersist.get('auth') ? storePersist.get('auth') : AUTH_INITIAL_STATE;
 const auth_state =  AUTH_INITIAL_STATE;
 
-const initialState = { translate: lang_state };
+const initialState = { translate: lang_state ,auth : auth_state};
 
 const store = configureStore({
   reducer: rootReducer,
