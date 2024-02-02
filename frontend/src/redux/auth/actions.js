@@ -1,6 +1,7 @@
-import * as actionTypes from './types';
-import * as authService from '@/auth';
-import { request } from '@/request';
+import * as actionTypes from './constants';
+//import * as authService from '@/auth';
+import * as authService from './auth';
+//import { request } from '@/request';
 
 export const login =
   ({ loginData }) =>
@@ -139,8 +140,8 @@ export const logout = () => async (dispatch) => {
 export const updateProfile =
   ({ entity, jsonData }) =>
   async (dispatch) => {
-    let data = await request.updateAndUpload({ entity, id: '', jsonData });
-
+   // let data = await request.updateAndUpload({ entity, id: '', jsonData });
+    let data ={success:false};
     if (data.success === true) {
       dispatch({
         type: actionTypes.REQUEST_SUCCESS,

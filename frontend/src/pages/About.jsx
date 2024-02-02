@@ -1,6 +1,7 @@
 import { Button, Result } from 'antd';
 
-import useLanguage from '@/locale/useLanguage';
+//import useLanguage from '@/locale/useLanguage';
+import useLanguage from '../locale/useLanguage';
 
 const About = () => {
   const translate = useLanguage();

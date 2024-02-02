@@ -23,7 +23,7 @@ const BASE_URL="bigTech.com";
 
 export default function HeaderContent() {
   // const currentAdmin = useSelector(selectCurrentAdmin);
-  const currentAdmin={name:"dasiy",surname:"khoja",email:"daisykhoja@.com",photo:"",}
+  const currentAdmin={name:"ujjval",surname:"Tailor",email:"Ujjval@tailor.com",photo:"",}
   const { Header } = Layout;
 
   // const translate = useLanguage();
